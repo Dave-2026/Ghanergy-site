@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+  const password = "ghanergy2026";
+  const entered = prompt("Enter password to access Ghanergy site:");
+
+  if (entered !== password) {
+    document.write("");
+    document.body.innerHTML = "<h1 style='text-align:center;margin-top:20%;font-family:Arial;'>Access denied</h1>";
+  }
+</script>  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ghanergy | Greater Accra Waste-to-Energy Project</title>
