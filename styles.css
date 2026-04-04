@@ -1,0 +1,93 @@
+
+:root{
+  --green:#1B5E20;
+  --green2:#2E8B2A;
+  --lightbg:#F7FAF7;
+  --gold:#E0A345;
+  --goldlight:#FDF2DC;
+  --text:#1A1A1A;
+  --muted:#4A4A4A;
+  --border:#D0D0D0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--lightbg);
+  color:var(--text);
+  line-height:1.6;
+}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+.hero{background:#fff;border-bottom:1px solid var(--gold)}
+.banner-wrap{overflow:hidden;border-bottom:4px solid var(--gold);background:#fff}
+.banner{width:100%;max-height:228px;object-fit:contain;display:block}
+.subnav{
+  margin-top:16px;padding:12px 0;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);
+  display:flex;flex-wrap:wrap;gap:24px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em
+}
+.subnav a{color:var(--green);text-decoration:none}
+.subnav a:hover{text-decoration:underline}
+h1{margin:32px 0 0;color:var(--green);font-size:56px;line-height:1.1}
+h2{margin:8px 0 0;color:var(--green2);font-size:36px;line-height:1.2}
+p{margin:16px 0 0;font-size:15px}
+.lede{max-width:920px;font-size:17px;line-height:1.8}
+.lead2{font-size:16px}
+.section{padding:48px 0}
+.section-narrow-bottom{padding-bottom:24px}
+.section-label{
+  color:var(--green);font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase
+}
+.stats{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stat{border:1px solid var(--gold);background:var(--goldlight);padding:20px 24px}
+.value{font-size:38px;font-weight:700;color:var(--green)}
+.label{margin-top:8px;font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#7A5010}
+.card{border:1px solid var(--border);background:#fff;padding:24px}
+.smalltitle{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--green)}
+.tablewrap{margin-top:24px;overflow-x:auto;border:1px solid var(--border);background:#fff}
+table{width:100%;border-collapse:collapse}
+thead tr{background:var(--green);color:#fff}
+th,td{border:1px solid var(--border);padding:12px 16px;text-align:left;font-size:14px;vertical-align:top}
+th{font-size:13px;font-weight:700}
+tbody tr:nth-child(odd){background:#F4FAF4}
+.grid2{display:grid;grid-template-columns:1.05fr .95fr;gap:32px}
+.stack{display:grid;gap:20px}
+.callout{
+  margin-top:24px;border-left:6px solid var(--gold);border-top:2px solid var(--gold);
+  border-right:1px solid var(--border);border-bottom:1px solid var(--border);
+  background:var(--goldlight);padding:20px
+}
+.callout-title{font-size:16px;font-weight:700;color:#7A5010}
+.bulletlist{margin:16px 0 0;padding-left:20px}
+.bulletlist li{margin:8px 0;font-size:14px;line-height:1.7}
+.gap-top{margin-top:24px}
+.subhead{font-size:16px;font-weight:700;color:var(--green)}
+.strongish{font-size:20px;font-weight:700;color:#7A5010;line-height:1.5}
+.leaders{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.leader{text-align:center}
+.leader img{
+  width:224px;height:224px;object-fit:cover;border-radius:50%;
+  border:1px solid var(--gold);display:block;margin:0 auto
+}
+.name{margin-top:16px;font-size:18px;font-weight:700;color:var(--green)}
+.role{margin-top:4px;font-size:14px;color:var(--muted)}
+.bio{margin-top:12px;font-size:13px;line-height:1.6;color:var(--muted)}
+.enquiry{
+  margin-top:24px;border-left:4px solid #4CB848;background:#F4FAF4;padding:12px 16px
+}
+.enquiry-title{font-size:14px;font-weight:700;color:var(--green)}
+.glossary{padding-bottom:32px}
+.glossgrid{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:13px;line-height:1.6}
+.footer{margin-top:48px;border-top:1px solid var(--gold);background:#fff}
+.footerline{height:2px;background:var(--gold)}
+.footcontent{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;
+  padding-top:16px;padding-bottom:16px;font-size:12px;color:var(--muted)
+}
+a{color:var(--green)}
+@media (max-width: 900px){
+  h1{font-size:40px}
+  h2{font-size:30px}
+  .stats,.grid2,.leaders,.glossgrid{grid-template-columns:1fr}
+  .leader img{width:180px;height:180px}
+}
